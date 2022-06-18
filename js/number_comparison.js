@@ -4,7 +4,7 @@ do {
   var argFirst = +prompt("Введите первое число для сравнения:");
 }
 while
-  (isNaN(argFirst) || (Boolean(argFirst) === false));
+  (isNaN(argFirst) || ((Boolean(argFirst) === false) && (argFirst !== 0)));
 
 // Получаем второе значение
 
@@ -12,7 +12,7 @@ do {
   var argSecond = +prompt("Введите второе число для сравнения:");
 }
 while
-  (isNaN(argSecond) || (Boolean(argSecond) === false));
+  (isNaN(argSecond) || ((Boolean(argSecond) === false) && (argFirst !== 0)));
 
 // Сравниваем и выводим результат в модальном окне
 
