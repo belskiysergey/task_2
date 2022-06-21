@@ -23,4 +23,3 @@ if (argFirst < argSecond) {
 } else {
   alert("Значения равны!" + "\n" + argFirst + " = " + argSecond);
 }
-
