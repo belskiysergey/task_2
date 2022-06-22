@@ -1,6 +1,6 @@
-var START_VALUE = 0;
-var ONE_KILOMETER_IN_METERS = 1000;
-var ONE_FEET_IN_METERS = 0.305;
+const startValue = 0;
+const oneKilimeterInMeters = 1000;
+const oneFeetInMeters = 0.305;
 
 // Получаем значение в километрах
 
@@ -10,7 +10,7 @@ do {
 while
   (isNaN(argKilometers)
   || (Boolean(argKilometers) === false)
-  || (argKilometers < START_VALUE));
+  || (argKilometers < startValue));git
 
 // Получаем значение в футах
 
@@ -20,10 +20,10 @@ do {
 while
   (isNaN(argFeet)
   || (Boolean(argFeet) === false)
-  || (argFeet < START_VALUE));
+  || (argFeet < startValue));
 
-let kilometersInMeters = argKilometers * ONE_KILOMETER_IN_METERS;
-let feetInMeters = argFeet * ONE_FEET_IN_METERS;
+let kilometersInMeters = argKilometers * oneKilimeterInMeters;
+let feetInMeters = argFeet * oneFeetInMeters;
 
 if (argKilometers < feetInMeters) {
   alert(feetInMeters + " футов " + "больше." + "\n" + kilometersInMeters + " километров " + "меньше.");
